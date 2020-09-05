@@ -1,4 +1,4 @@
-body {
+#index {
   color: #0074d9;
   font-family: arial;
   max-width: 650px;
@@ -7,15 +7,32 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: "#0074D9";
+}
+.paragraph {
+  color: "#aaaaaa";
+}
+#about {
+  color: "red";
 }
 .bodypara {
   color: #888888;
 }
+body {
+  color: black;
+  font-family: arial;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 footer {
-  color: #888888;
+  color: #aaaaaa;
   border-top: 1px solid #eeeeee;
   margin-top: 12px;
-
   padding: 16px 0;
 }
 .main-content {
@@ -29,13 +46,19 @@ h1 {
   font-size: 60px;
   margin-bottom: 15px;
 }
+.portraits {
+  width: 300px;
+  color: rgba(0, 255, 0, 0.1);
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  justify-items: center;
+}
 header a {
-  color: black;
+  color: #85144b;
   margin-right: 16px;
-
   font-weight: 800;
   text-decoration: underline;
-
   text-decoration: none;
 }
 .portrait {
