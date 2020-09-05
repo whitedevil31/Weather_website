@@ -14,7 +14,7 @@ app.set("views", pathname);
 hbs.registerPartials(partials);
 app.use(express.static(direcname));
 app.get("", (req, res) => {
-  res.render("index", { title: "Weather", worksat: "facebook" });
+  res.render("index", { title: "Weather Stop. ", name: "nanda" });
 });
 0;
 app.get("/about", (req, res) => {

@@ -15,17 +15,32 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        "It is" +
-          " " +
+        "Weather:" +
           body.current.weather_descriptions[0] +
           " " +
-          "outside and the temperature is" +
-          " " +
+          "outside and the temperature is around " +
           body.current.temperature +
+          "F." +
+          "<br>" +
+          "<br>" +
+          "The average wind speed is " +
+          body.current.wind_speed +
+          "m/hr" +
+          " and humidity is nearly " +
+          body.current.humidity +
+          "%." +
+          "<br>" +
+          "<br>" +
+          "TimeZone:" +
           " " +
-          "and the humidity is" +
+          body.location.timezone_id +
+          "." +
+          "<br>" +
+          "<br>" +
+          "Time of the report:" +
           " " +
-          body.current.humidity
+          body.location.localtime +
+          "."
       );
     }
   });
